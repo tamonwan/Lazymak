@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:layout_width="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_pdf"
+    tools:context="com.mycompany.pop.PDF"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.89">
+
+        <ListView
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:id="@+id/namelist"
+            android:layout_alignBottom="@+id/logoutbutton"
+            android:layout_alignParentStart="true" />
+
+        <ListView
+            android:layout_width="183dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/postlist" />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Post"
+        android:id="@+id/postbutton"
+        android:onClick="post"
+        android:layout_below="@+id/namelist"
+        android:layout_gravity="right" />
+
+    <Button
+        android:layout_width="77dp"
+        android:layout_height="wrap_content"
+        android:text="draw"
+        android:id="@+id/drawbutton"
+        android:onClick="draw"
+        android:layout_below="@+id/namelist"
+        android:layout_gravity="right" />
+
+    <Button
+        android:id="@+id/logoutbutton"
+        android:text="log out"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:onClick="logout"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="84dp" />
+
+</LinearLayout>
