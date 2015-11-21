@@ -17,16 +17,9 @@
 
     <com.mycompany.lazy.heart
         android:layout_width="369dp"
+        android:onClick="go"
         android:layout_height="334dp"
         android:layout_weight="0.04" />
-
-    <Button
-        android:id="@+id/gobutton"
-        android:text="go"
-        android:layout_height="wrap_content"
-        android:layout_width="match_parent"
-        android:onClick="go"
-        />
 
 
 </LinearLayout>

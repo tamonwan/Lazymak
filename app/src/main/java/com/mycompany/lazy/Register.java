@@ -43,7 +43,7 @@ public class Register extends AppCompatActivity {
                     public void done(ParseException e) {
                         if (e == null) {
                             Toast.makeText(getApplicationContext(), "successfully registered :" + username.getText().toString(), Toast.LENGTH_SHORT).show();
-                            startActivity(new Intent(Register.this, MainActivity.class));
+                            startActivity(new Intent(Register.this, Login.class));
 
                         } else {
 

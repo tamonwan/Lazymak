@@ -47,7 +47,7 @@ public class heart extends View {
         System.out.println("time=" + relTime + "\treltime=" + movie.duration());
         movie.setTime(relTime);
 
-        movie.draw(canvas, this.getWidth() / 3, this.getHeight() / 3);
+        movie.draw(canvas, this.getWidth() / 4, this.getHeight() / 3);
         this.invalidate();
 
     }
